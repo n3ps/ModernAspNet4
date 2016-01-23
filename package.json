@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": "proof",
+  "private": true,
+  "devDependencies": {
+    "bower-installer": "^1.2.0",
+    "node-sass": "^3.4.2"
+  },
+  "scripts": {
+    "compile:css": "node-sass design-time/css --output assets/css",
+    "build": "npm run compile:css",
+    "postinstall": "bower-installer"
+  }
+}
