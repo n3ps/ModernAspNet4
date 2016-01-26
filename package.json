@@ -4,11 +4,16 @@
   "private": true,
   "devDependencies": {
     "bower-installer": "^1.2.0",
-    "node-sass": "^3.4.2"
+    "jquery": "^2.2.0",
+    "node-sass": "^3.4.2",
+    "rimraf": "^2.5.1"
   },
   "scripts": {
-    "compile:css": "node-sass design-time/css --output assets/css",
-    "build": "npm run compile:css",
+    "clean": "rimraf assets/*",
+    "bundle:css": "node-sass design-time/css/site.scss --o assets/css",
+    "bundle:js": "",
+    "watch:css": "npm run bundle:css && node-sass -w design-time/css/site.scss --o assets/css",
+    "build": "npm run bundle:css & npm run bundle:js",
     "postinstall": "bower-installer"
   }
 }

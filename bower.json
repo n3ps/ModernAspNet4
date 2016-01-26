@@ -3,9 +3,15 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "jquery": "~1.12.0"
+    "jquery": "~1.12.0",
+    "bootstrap-sass": "~3.3.6"
   },
   "install": {
-    "path": "design-time/lib"
+    "path": "design-time/lib",
+    "sources": {
+      "bootstrap-sass": [
+        "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/**"
+      ]
+    }
   }
 }
