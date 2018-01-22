@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "bower-installer": "^1.2.0",
-    "jquery": "^2.2.0",
+    "jquery": "^3.0.0",
     "node-sass": "^3.4.2",
     "rimraf": "^2.5.1"
   },
